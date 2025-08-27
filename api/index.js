@@ -20,8 +20,8 @@ app.get("/", (req, res) => {
 });
 
 // ROUTES qo‘shish
-const authRoutes = require("./auth");
-const userRoutes = require("./users");
+const authRoutes = require("../routes/auth");
+const userRoutes = require("../routes/users");
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
